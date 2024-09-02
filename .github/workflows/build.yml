@@ -1,5 +1,5 @@
 name: Build
-# test 1
+# test 2
 on: [push, pull_request]
 
 # as recommended by: https://github.com/actions/checkout/issues/1590
@@ -143,7 +143,7 @@ jobs:
       - name: Deploy
         uses: actions/upload-artifact@v4
         with:
-          name: "tic80-linux"
+          name: "tic80-linux-pro"
           path: |
             build/bin/tic80
             build/bin/*.so
